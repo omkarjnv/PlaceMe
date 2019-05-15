@@ -1,0 +1,213 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:background="@drawable/fragment_background"
+        android:padding="20dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/view"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/register_heading"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/default_image" />
+
+        <EditText
+            android:id="@+id/usn"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:editable="false"
+            android:focusable="false"
+            android:ems="10"
+            android:inputType="textPersonName"
+            />
+        <EditText
+            android:id="@+id/studname"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+
+            android:padding="8dp"
+            android:ems="10"
+            android:layout_below="@+id/usn"
+            android:editable="false"
+            android:focusable="false"
+            android:inputType="textPersonName"
+            />
+
+        <EditText
+            android:id="@+id/studno"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+
+            android:padding="8dp"
+            android:layout_below="@+id/studname"
+            android:ems="10"
+            android:inputType="phone"
+            android:editable="false"
+            android:focusable="false"
+             />
+
+        <EditText
+            android:id="@+id/sslc"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+
+            android:padding="8dp"
+            android:layout_below="@+id/studno"
+            android:ems="10"
+            android:editable="false"
+            android:focusable="false"
+            android:inputType="textPersonName"
+             />
+
+        <EditText
+            android:id="@+id/pu"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+
+            android:padding="8dp"
+            android:layout_below="@+id/sslc"
+            android:ems="10"
+            android:editable="false"
+            android:focusable="false"
+            android:inputType="textPersonName"
+             />
+
+        <EditText
+            android:id="@+id/cgpa"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+
+            android:padding="8dp"
+            android:layout_below="@+id/pu"
+            android:ems="10"
+            android:editable="false"
+            android:focusable="false"
+            android:inputType="textPersonName"
+            />
+        <TextView
+            android:id="@+id/tusn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:text="USN"
+            android:layout_marginTop="24dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_alignBottom="@+id/usn"
+            android:editable="false"
+            android:focusable="false"
+            android:layout_toLeftOf="@+id/usn"
+            />
+        <TextView
+            android:id="@+id/tname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginTop="5dp"
+            android:layout_alignBottom="@+id/name"
+            android:text="Name"
+           android:layout_toLeftOf="@+id/name"
+            android:layout_below="@+id/tusn"/>
+
+        <TextView
+            android:id="@+id/tphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/tname"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_alignBottom="@+id/studno"
+            android:layout_toLeftOf="@+id/studno"
+            android:text="Phone No." />
+
+        <TextView
+            android:id="@+id/tsslc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/tphone"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_alignBottom="@+id/sslc"
+            android:text="SSLC %"
+            android:layout_toLeftOf="@+id/sslc"
+            />
+
+        <TextView
+            android:id="@+id/tpu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tsslc"
+            android:text="PU %"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_alignBottom="@+id/pu"
+            android:layout_toLeftOf="@+id/pu"
+             />
+
+        <TextView
+            android:id="@+id/tcgpa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tpu"
+            android:layout_marginTop="5dp"
+            android:text="CGPA"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_alignBottom="@+id/cgpa"
+            android:layout_toLeftOf="@+id/cgpa"
+             />
+
+
+
+
+
+        <Button
+            android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cgpa"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/primary_color_btn"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Edit"
+
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/primary_color_btn"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Update"
+
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>
